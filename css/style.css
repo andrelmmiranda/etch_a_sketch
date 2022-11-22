@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* --fonte-padrao: Arial, Helvetica, sans-serif; */
+    --fonte-padrao: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--fonte-padrao);   
+    padding: 25px 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+}
+
+.controllers{
+    width: 250px;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.05)
+}
+
+.controllers input[type='color']{
+    visibility: hidden;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 700px;
+    height: 700px;
+}
+
+.square{
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.input-group{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .input-group > div{
+        padding: 25px 0;
+    }
+        .input-group > div > i{
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 2px 0;
+        }
+            .input-group > div > i > span:first-child{
+                font-size: 16px;
+                margin-left: 10px;
+                font-family: var(--fonte-padrao);
+            }
+
+.input-range{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .input-range > p{
+        font-size: 16px;
+        font-family: var(--fonte-padrao);
+        margin-bottom: 8px;
+    }
+
+    .input-range > input{
+        width: 100%;
+    }
+
+.focus{
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.05);
+}

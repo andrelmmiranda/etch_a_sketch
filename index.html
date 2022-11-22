@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Etch a Scketch</h1>
+        <div class="container">
+            <div class="controllers">
+                <div class="input-group">
+                    <input type="color" id="color"> 
+                    <div>
+                        <i class="fa-solid fa-palette"><span>Pick color</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pencil"><span>Pencil</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-eraser"><span>Eraser</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-broom"><span>Clear all</span></i>
+                    </div>
+                </div>
+                <div class="input-range">
+                    <p></p>
+                    <input type="range" step="1" min="2" max="60" value="30">
+                </div>
+            </div>
+            <div class="grid"></div>
+        </div>
+        <script src="./js/script.js"></script>
+    </main>
+</body>
+</html>
